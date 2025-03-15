@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WarriorsQuest - Epic Monster Survival Adventure | Play Online Now</title>
+    <meta name="description" content="Embark on an epic adventure in WarriorsQuest, a thrilling monster survival game. Test your skills against waves of monsters and become the ultimate warrior.">
+    <link rel="canonical" href="https://warriorsquest.online">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="WarriorsQuest - Epic Monster Survival Adventure">
+    <meta property="og:description" content="Battle monsters, upgrade your warrior, and survive waves of enemies in this action-packed online game.">
+    <meta property="og:url" content="https://warriorsquest.online">
+    <meta property="og:type" content="website">
+    <meta name="keywords" content="warriorsquest, monster survival game, online game, action game, warrior game">
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: #f5f5f7; /* Apple light gray background */
+            color: #1d1d1f; /* Apple dark text color */
+            line-height: 1.6;
+        }
+        
+        /* Container */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background-color: #000000; /* Apple black */
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        .header-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #ffffff;
+            font-weight: 700;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: #a2a2a2; /* Apple light gray text */
+        }
+        
+        /* Game Section */
+        .game-section {
+            background-color: #ffffff;
+            border-radius: 18px;
+            margin: 30px 0;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        .game-container {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+            overflow: hidden;
+            border-radius: 12px;
+        }
+        
+        .game-iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        /* Game Info */
+        .game-info {
+            margin-top: 30px;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            margin: 25px 0 15px;
+            color: #000000;
+            font-weight: 600;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            color: #515154; /* Apple dark gray text */
+        }
+        
+        /* Features Section */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+        
+        .feature-card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: #1d1d1f;
+        }
+        
+        /* Call to Action */
+        .cta {
+            background-color: #0071e3; /* Apple blue */
+            color: #ffffff;
+            text-align: center;
+            padding: 40px 0;
+            border-radius: 18px;
+            margin: 30px 0;
+        }
+        
+        .cta h2 {
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #ffffff;
+            color: #0071e3;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            background-color: #f5f5f7;
+            transform: scale(1.05);
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #f5f5f7;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 40px;
+            border-top: 1px solid #d2d2d7; /* Apple border color */
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .footer-links a {
+            color: #515154;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: #0071e3;
+        }
+        
+        .copyright {
+            color: #86868b; /* Apple gray text */
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .tagline {
+                font-size: 1rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            .feature-card {
+                padding: 20px;
+            }
+            
+            .game-container {
+                padding-top: 75%; /* Slightly taller for mobile */
+            }
+        }
+        
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .container {
+                padding: 0 15px;
+            }
+            
+            .game-section, .feature-card, .cta {
+                border-radius: 12px;
+                padding: 15px;
+            }
+            
+            .btn {
+                padding: 10px 25px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1>WarriorsQuest: Epic Monster Survival</h1>
+                <p class="tagline">Battle hordes of monsters, upgrade your warrior, and become the ultimate survivor in this action-packed adventure.</p>
+            </div>
+        </div>
+    </header>
+    
+    <main class="container">
+        <section class="game-section">
+            <div class="game-container">
+                <iframe src="https://cloud.onlinegames.io/games/2025/unity/monster-survivors/index-og.html" class="game-iframe" title="Play WarriorsQuest Online" allow="fullscreen" loading="lazy"></iframe>
+            </div>
+        </section>
+        
+        <section class="game-info">
+            <h2>About WarriorsQuest</h2>
+            <p>WarriorsQuest is an intense monster survival game where you must defend yourself against endless waves of creatures. Test your skills, reflexes, and strategic thinking as you battle through increasingly difficult challenges.</p>
+            
+            <p>Customize your warrior, collect power-ups, and unlock special abilities to enhance your chances of survival. With each playthrough offering a unique experience, no two battles will ever be the same.</p>
+            
+            <h2>Game Features</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <h3>Epic Battles</h3>
+                    <p>Face off against diverse monsters with unique abilities and attack patterns. Adapt your strategy to overcome each new threat.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>Character Progression</h3>
+                    <p>Level up your warrior, unlock new weapons, and discover powerful abilities that will help you survive longer in battle.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>Dynamic Environments</h3>
+                    <p>Explore beautifully designed landscapes that change with each playthrough, ensuring a fresh experience every time.</p>
+                </div>
+            </div>
+            
+            <h2>How to Play</h2>
+            <p>Use the arrow keys or WASD to move your character. Automatically attack nearby enemies and collect experience orbs to level up. Choose upgrades wisely to build a powerful character capable of surviving the monster onslaught.</p>
+            
+            <p>The longer you survive, the more dangerous the enemies become. Can you set a new high score and prove yourself as the ultimate warrior?</p>
+        </section>
+        
+        <section class="cta">
+            <h2>Ready for Battle?</h2>
+            <p>Start your adventure now and see how long you can survive!</p>
+            <a href="#" class="btn" onclick="document.querySelector('.game-iframe').scrollIntoView({behavior: 'smooth'}); return false;">Play Now</a>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact Us</a>
+                <a href="#">About</a>
+            </div>
+            <p class="copyright">© 2025 WarriorsQuest. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
